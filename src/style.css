@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --background-primary: #F4F5FB;
+    --background-secondary: #FFFFFF;
+
+    --color-brand: #CA3884;
+    --color-brand-hover: #A52C6B;
+    --color-danger: #c93847;
+    --content-primary: #080b12;
+    --content-secondary: #374151;
+    --content-tertiary: #9ca3af;
+
+    --border-primary: #D1D5DB;
+    --border-secondary: #B9C2D0;
+
+    --font-title: bold 24px/32px 'Inter', sans-serif;
+    --font-label: 600 16px/29px 'Inter', sans-serif;
+    --font-paragraph: 500 16px/20px 'Inter', sans-serif;
+    --font-link: 500 14px/16px 'Inter', sans-serif;
+      
+}
+
+body {
+    background-color: var(--background-primary);
+}
+
+header.container {
+    max-width: 1366px;
+    max-height: 768px;
+    padding-block: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+#logo img {
+    display: block;
+    max-width: 156px;
+    max-height: 40px;
+    gap: 7px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;  
+    outline: none; 
+
+}
+
+body {
+    margin-left: 369px;
+}
+
+.nav {
+    max-width: 57px;
+    max-height: 16px;
+    margin-top: 152px;
+}
+
+#back {
+    font: var(--font-link);
+    color: var(--color-brand);
+}
+
+.titleDiv {
+    margin-top: 16px;
+    max-width: 240px;
+    max-height: 32px;
+}
+
+#title {
+    font: var(--font-title);
+    color: var(--content-primary);
+}
+
+.formContainer {
+    display: flex;
+    max-width: 627px;
+    max-height: 44px;
+    margin-top: 44px;
+    gap: 16px;
+}
+
+.inputStyle {
+    flex: 1;
+    font: var(--font-paragraph);
+    background-color: var(--background-secondary);
+    max-width: 451px;
+    padding: 18px;
+    border: 2px solid var(--border-primary);
+    border-radius: 12px;
+    outline: none;
+}
+
+.inputStyle::placeholder {
+    color: var(--content-tertiary);
+}
+
+.buttonSubmit {
+    font: var(--font-label);
+    flex: 1;
+    background-color: var(--color-brand);
+    border: none;
+    max-width: 160px;
+    max-height: 44px;
+    border-radius: 12px;
+    gap: 8px;
+    color: white;
+}
