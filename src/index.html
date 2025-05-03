@@ -10,13 +10,14 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-    <header class="container">
-        <div id="logo">
-            <img src="../assets/logo/logo.svg" alt="logo">
-        </div>
-    </header>
-        <body>
-            <div>
+    <body>
+        <header>
+            <div id="logo">
+                <img src="../assets/logo/logo.svg" alt="logo">
+            </div>
+        </header>
+        <main>
+            <div class="mainContent">
                 <div class="nav">
                     <nav id="back">
                         <a href="#"><- Voltar</a>
@@ -27,16 +28,67 @@
                     <h1>Compras da semana</h1>
                 </div>
 
-                <div>
-                    <form id="meuFormulario" action="index.html" method="GET" class="formContainer">
+                <div class="mainContent">
+                    <form id="meuFormulario" action="" method="GET" class="formContainer">
                         <input class="inputStyle" type="text" name="nome" placeholder="Adicione um novo item" required>
                         <button class="buttonSubmit" type="submit">Adicionar item</button>
                     </form>
                 </div>
             </div>    
-            <main>
-                
-            </main>
-        </body>
-    
+            <div class="mainContent">
+                <ul class="checklist">
+                    <li class="containerList">
+                        <label class="checkboxLabel">
+                            <input type="checkbox" class="checkboxInput">
+                            <span class="checkboxVisual"></span>
+                            <span class="containerSpanList">Pão de forma</span>
+                        </label>
+                        <div>
+                            <img id="imgTrashcan" src="../assets/icons/trashcan.svg" alt="">
+                        </div>
+                    </li>
+                    <li class="containerList">
+                        <label class="checkboxLabel">
+                            <input type="checkbox" class="checkboxInput">
+                            <span class="checkboxVisual"></span>
+                            <span class="containerSpanList">Café preto</span>
+                        </label>
+                        <div>
+                            <img id="imgTrashcan" src="../assets/icons/trashcan.svg" alt="">
+                        </div>
+                    </li>
+                    <li class="containerList">
+                        <label class="checkboxLabel">
+                            <input type="checkbox" class="checkboxInput">
+                            <span class="checkboxVisual"></span>
+                            <span class="containerSpanList">Suco de laranja</span>
+                        </label>
+                        <div>
+                            <img id="imgTrashcan" src="../assets/icons/trashcan.svg" alt="">
+                        </div>
+                    </li>
+                    <li class="containerList">
+                        <label class="checkboxLabel">
+                            <input type="checkbox" class="checkboxInput">
+                            <span class="checkboxVisual"></span>
+                            <span class="containerSpanList">Pão de forma</span>
+                        </label>
+                        <div>
+                            <img id="imgTrashcan" src="../assets/icons/trashcan.svg" alt="">
+                        </div>
+                    </li>
+                </ul>  
+            </div>
+        </main>
+        <footer>
+            <div class="footerContainer">
+                <div class="toast">
+                    <div>
+                        <img class="warningImg" src="../assets/icons/warning-circle-filled.svg" alt="">
+                    </div>
+                    <span class="spanToast">O item foi removido da lista!</span>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
