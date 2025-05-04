@@ -217,22 +217,38 @@ a {
 .footerContainer {
     display: flex;
     justify-content: center;
+    position: relative;
+    height: 100px; /* Altura suficiente para o toast */
+    overflow: hidden; /* Opcional - evita barra de rolagem durante a animação */
 }
 
 .toast {
-    display: flex;
-    background-color: var(--color-danger);
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -100px; /* Começa escondido */
+    width: 100%;
     max-width: 627px;
-    max-height: 49px;
-    width: 400px;
     height: 49px;
-    visibility: visible;
+    background-color: var(--color-danger);
+    color: white;
+    display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
     z-index: 1000;
-    transition: opacity 2s ease-in, visibility 0s 0s;
-    opacity: 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: bottom 0.5s ease-out;
+    visibility: hidden;
+}
+
+.toast.show {
+    bottom: 20px; /* Posição final */
+    visibility: visible;
+}
+
+.toast.visible {
+    bottom: 20px; /* Posição final quando visível (ajuste conforme necessário) */
 }
 
 .spanToast {
