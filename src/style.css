@@ -129,6 +129,7 @@ a {
 
 .buttonSubmit:hover {
     background-color: var(--color-brand-hover);
+    cursor: pointer;
 }
 
 
@@ -156,6 +157,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 12px;
+    cursor: pointer;
 }
 
 .checkboxInput:checked + .checkboxVisual {
